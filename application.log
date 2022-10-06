@@ -1,0 +1,447 @@
+06-10-2022 08:35:04.225 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 4900 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+06-10-2022 08:35:04.230 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+06-10-2022 08:35:04.231 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+06-10-2022 08:35:05.252 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-10-2022 08:35:05.288 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 23 ms. Found 0 JPA repository interfaces.
+06-10-2022 08:35:05.832 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+06-10-2022 08:35:05.840 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+06-10-2022 08:35:05.841 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+06-10-2022 08:35:05.920 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+06-10-2022 08:35:05.921 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1655 ms
+06-10-2022 08:35:06.065 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+06-10-2022 08:35:06.119 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+06-10-2022 08:35:06.231 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+06-10-2022 08:35:06.314 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+06-10-2022 08:35:06.509 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+06-10-2022 08:35:06.528 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+06-10-2022 08:35:07.141 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-10-2022 08:35:07.149 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 08:35:07.168 INFO  [main] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.main[502] : Autowired annotation should only be used on methods with parameters: public cl.ionix.user.core.bo.ResponseExampleBo cl.ionix.user.core.services.impl.ExampleServiceImpl.getExample()
+06-10-2022 08:35:07.364 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-10-2022 08:35:07.443 WARN  [main] org.springframework.context.support.AbstractApplicationContext.main[591] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/Users/arturotorres/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.9.2/ed2ed714a6cba8804d00f80f0534901e4c7a3211/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/arturotorres/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.9.2/ed2ed714a6cba8804d00f80f0534901e4c7a3211/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
+cl.ionix.user.controller.UserController#example()
+to {GET [/v1/user]}: There is already 'userController' bean method
+cl.ionix.user.controller.UserController#example2() mapped.
+06-10-2022 08:35:07.445 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 08:35:07.447 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[350] : HikariPool-1 - Shutdown initiated...
+06-10-2022 08:35:07.454 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[352] : HikariPool-1 - Shutdown completed.
+06-10-2022 08:35:07.455 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Stopping service [Tomcat]
+06-10-2022 08:35:07.468 INFO  [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.main[136] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+06-10-2022 08:35:07.496 ERROR [main] org.springframework.boot.SpringApplication.main[843] : Application run failed [org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/Users/arturotorres/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.9.2/ed2ed714a6cba8804d00f80f0534901e4c7a3211/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/Users/arturotorres/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.9.2/ed2ed714a6cba8804d00f80f0534901e4c7a3211/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
+cl.ionix.user.controller.UserController#example()
+to {GET [/v1/user]}: There is already 'userController' bean method
+cl.ionix.user.controller.UserController#example2() mapped.]
+06-10-2022 08:40:10.636 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 4978 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+06-10-2022 08:40:10.639 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+06-10-2022 08:40:10.639 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+06-10-2022 08:40:11.454 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-10-2022 08:40:11.475 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+06-10-2022 08:40:11.958 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+06-10-2022 08:40:11.968 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+06-10-2022 08:40:11.969 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+06-10-2022 08:40:12.061 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+06-10-2022 08:40:12.061 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1382 ms
+06-10-2022 08:40:12.192 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+06-10-2022 08:40:12.244 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+06-10-2022 08:40:12.380 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+06-10-2022 08:40:12.472 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+06-10-2022 08:40:12.654 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+06-10-2022 08:40:12.672 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+06-10-2022 08:40:13.288 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-10-2022 08:40:13.297 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 08:40:13.318 INFO  [main] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.main[502] : Autowired annotation should only be used on methods with parameters: public cl.ionix.user.core.bo.ResponseExampleBo cl.ionix.user.core.services.impl.ExampleServiceImpl.getExample()
+06-10-2022 08:40:13.535 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-10-2022 08:40:13.685 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+06-10-2022 08:40:14.055 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+06-10-2022 08:40:14.056 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+06-10-2022 08:40:14.076 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+06-10-2022 08:40:14.104 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+06-10-2022 08:40:14.234 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 9.305 seconds (JVM running for 10.024)
+06-10-2022 08:40:20.177 INFO  [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-1[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-10-2022 08:40:20.178 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[525] : Initializing Servlet 'dispatcherServlet'
+06-10-2022 08:40:20.179 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[547] : Completed initialization in 1 ms
+06-10-2022 08:40:20.615 WARN  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-2[1274] : No mapping for GET /ionix/user-api/
+06-10-2022 08:40:20.622 WARN  [http-nio-8080-exec-2] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-2[516] : No handler found for GET /ionix/user-api/
+06-10-2022 08:40:20.622 WARN  [http-nio-8080-exec-2] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-2[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/]
+06-10-2022 08:40:20.723 WARN  [http-nio-8080-exec-4] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-4[1274] : No mapping for GET /ionix/user-api/csrf
+06-10-2022 08:40:20.724 WARN  [http-nio-8080-exec-4] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-4[516] : No handler found for GET /ionix/user-api/csrf
+06-10-2022 08:40:20.725 WARN  [http-nio-8080-exec-4] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-4[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/csrf]
+06-10-2022 08:43:06.894 WARN  [http-nio-8080-exec-8] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-8[1274] : No mapping for GET /ionix/user-api/v1/user/ejemplo
+06-10-2022 08:43:06.896 WARN  [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-8[516] : No handler found for GET /ionix/user-api/v1/user/ejemplo
+06-10-2022 08:43:06.896 WARN  [http-nio-8080-exec-8] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-8[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/v1/user/ejemplo]
+06-10-2022 08:44:17.436 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 08:44:17.437 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+06-10-2022 08:44:17.442 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+06-10-2022 08:51:11.950 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 5169 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+06-10-2022 08:51:11.952 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+06-10-2022 08:51:11.952 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+06-10-2022 08:51:12.804 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-10-2022 08:51:12.822 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+06-10-2022 08:51:13.313 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+06-10-2022 08:51:13.323 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+06-10-2022 08:51:13.323 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+06-10-2022 08:51:13.416 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+06-10-2022 08:51:13.416 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1431 ms
+06-10-2022 08:51:13.546 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+06-10-2022 08:51:13.603 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+06-10-2022 08:51:13.711 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+06-10-2022 08:51:13.790 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+06-10-2022 08:51:13.972 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+06-10-2022 08:51:13.992 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+06-10-2022 08:51:14.638 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-10-2022 08:51:14.645 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 08:51:14.666 INFO  [main] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.main[502] : Autowired annotation should only be used on methods with parameters: public cl.ionix.user.core.bo.ResponseExampleBo cl.ionix.user.core.services.impl.ExampleServiceImpl.getExample()
+06-10-2022 08:51:14.867 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-10-2022 08:51:15.014 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+06-10-2022 08:51:15.363 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+06-10-2022 08:51:15.364 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+06-10-2022 08:51:15.382 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+06-10-2022 08:51:15.410 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+06-10-2022 08:51:15.542 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 9.329 seconds (JVM running for 10.044)
+06-10-2022 08:51:23.474 INFO  [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-1[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-10-2022 08:51:23.475 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[525] : Initializing Servlet 'dispatcherServlet'
+06-10-2022 08:51:23.477 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[547] : Completed initialization in 2 ms
+06-10-2022 08:51:23.742 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-6[1274] : No mapping for GET /ionix/user-api/
+06-10-2022 08:51:23.748 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-6[516] : No handler found for GET /ionix/user-api/
+06-10-2022 08:51:23.749 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-6[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/]
+06-10-2022 08:51:23.766 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-7[1274] : No mapping for GET /ionix/user-api/csrf
+06-10-2022 08:51:23.767 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-7[516] : No handler found for GET /ionix/user-api/csrf
+06-10-2022 08:51:23.767 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-7[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/csrf]
+06-10-2022 09:06:01.441 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 09:06:01.444 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+06-10-2022 09:06:01.449 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+06-10-2022 09:06:12.794 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 5347 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+06-10-2022 09:06:12.797 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+06-10-2022 09:06:12.797 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+06-10-2022 09:06:13.682 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-10-2022 09:06:13.706 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+06-10-2022 09:06:14.264 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+06-10-2022 09:06:14.273 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+06-10-2022 09:06:14.274 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+06-10-2022 09:06:14.372 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+06-10-2022 09:06:14.372 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1533 ms
+06-10-2022 09:06:14.518 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+06-10-2022 09:06:14.571 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+06-10-2022 09:06:14.708 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+06-10-2022 09:06:14.801 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+06-10-2022 09:06:14.986 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+06-10-2022 09:06:15.005 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+06-10-2022 09:06:15.648 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-10-2022 09:06:15.654 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 09:06:15.678 INFO  [main] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.main[502] : Autowired annotation should only be used on methods with parameters: public cl.ionix.user.core.bo.ResponseExampleBo cl.ionix.user.core.services.impl.ExampleServiceImpl.getExample()
+06-10-2022 09:06:15.891 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-10-2022 09:06:16.030 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+06-10-2022 09:06:16.384 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+06-10-2022 09:06:16.385 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+06-10-2022 09:06:16.402 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+06-10-2022 09:06:16.431 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+06-10-2022 09:06:16.558 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 9.509 seconds (JVM running for 10.211)
+06-10-2022 09:06:22.579 INFO  [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-1[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-10-2022 09:06:22.580 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[525] : Initializing Servlet 'dispatcherServlet'
+06-10-2022 09:06:22.581 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[547] : Completed initialization in 1 ms
+06-10-2022 09:06:22.838 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-6[1274] : No mapping for GET /ionix/user-api/
+06-10-2022 09:06:22.846 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-6[516] : No handler found for GET /ionix/user-api/
+06-10-2022 09:06:22.847 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-6[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/]
+06-10-2022 09:06:22.864 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-7[1274] : No mapping for GET /ionix/user-api/csrf
+06-10-2022 09:06:22.865 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-7[516] : No handler found for GET /ionix/user-api/csrf
+06-10-2022 09:06:22.865 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-7[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/csrf]
+06-10-2022 09:06:53.370 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 09:06:53.372 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+06-10-2022 09:06:53.377 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+06-10-2022 09:07:07.231 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 5370 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+06-10-2022 09:07:07.234 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+06-10-2022 09:07:07.234 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+06-10-2022 09:07:08.005 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-10-2022 09:07:08.027 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+06-10-2022 09:07:08.591 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+06-10-2022 09:07:08.604 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+06-10-2022 09:07:08.604 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+06-10-2022 09:07:08.726 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+06-10-2022 09:07:08.727 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1464 ms
+06-10-2022 09:07:08.890 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+06-10-2022 09:07:08.950 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+06-10-2022 09:07:09.147 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+06-10-2022 09:07:09.276 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+06-10-2022 09:07:09.537 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+06-10-2022 09:07:09.569 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+06-10-2022 09:07:10.257 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-10-2022 09:07:10.267 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 09:07:10.287 INFO  [main] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.main[502] : Autowired annotation should only be used on methods with parameters: public cl.ionix.user.core.bo.ResponseExampleBo cl.ionix.user.core.services.impl.ExampleServiceImpl.getExample()
+06-10-2022 09:07:10.538 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-10-2022 09:07:10.779 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+06-10-2022 09:07:11.147 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+06-10-2022 09:07:11.148 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+06-10-2022 09:07:11.165 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+06-10-2022 09:07:11.191 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+06-10-2022 09:07:11.311 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 9.723 seconds (JVM running for 10.426)
+06-10-2022 09:44:09.545 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool$HouseKeeper.HikariPool-1 housekeeper[780] : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s674ms), soft-evicting connections from pool.
+06-10-2022 10:35:17.287 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool$HouseKeeper.HikariPool-1 housekeeper[788] : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m37s747ms).
+06-10-2022 11:52:17.505 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool$HouseKeeper.HikariPool-1 housekeeper[780] : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s790ms), soft-evicting connections from pool.
+06-10-2022 11:55:29.688 INFO  [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-1[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-10-2022 11:55:29.690 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[525] : Initializing Servlet 'dispatcherServlet'
+06-10-2022 11:55:29.705 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[547] : Completed initialization in 15 ms
+06-10-2022 12:21:56.443 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool$HouseKeeper.HikariPool-1 housekeeper[788] : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m8s913ms).
+06-10-2022 12:31:58.190 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool$HouseKeeper.HikariPool-1 housekeeper[788] : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m31s733ms).
+06-10-2022 12:51:11.955 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool$HouseKeeper.HikariPool-1 housekeeper[788] : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m43s752ms).
+06-10-2022 12:52:02.995 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 12:52:03.015 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+06-10-2022 12:52:03.019 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+06-10-2022 16:36:02.799 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 9039 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+06-10-2022 16:36:02.802 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+06-10-2022 16:36:02.802 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+06-10-2022 16:36:03.823 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-10-2022 16:36:03.912 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interfaces.
+06-10-2022 16:36:04.478 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+06-10-2022 16:36:04.490 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+06-10-2022 16:36:04.490 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+06-10-2022 16:36:04.587 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+06-10-2022 16:36:04.587 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1749 ms
+06-10-2022 16:36:04.740 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+06-10-2022 16:36:04.805 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+06-10-2022 16:36:04.945 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+06-10-2022 16:36:05.046 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+06-10-2022 16:36:05.258 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+06-10-2022 16:36:05.282 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+06-10-2022 16:36:05.916 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-10-2022 16:36:05.922 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 16:36:06.647 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-10-2022 16:36:06.792 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+06-10-2022 16:36:07.076 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+06-10-2022 16:36:07.077 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+06-10-2022 16:36:07.097 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+06-10-2022 16:36:07.130 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+06-10-2022 16:36:07.273 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 10.298 seconds (JVM running for 11.23)
+06-10-2022 16:36:16.843 INFO  [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-1[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-10-2022 16:36:16.844 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[525] : Initializing Servlet 'dispatcherServlet'
+06-10-2022 16:36:16.846 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[547] : Completed initialization in 2 ms
+06-10-2022 16:36:17.271 WARN  [http-nio-8080-exec-3] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-3[1274] : No mapping for GET /ionix/user-api/
+06-10-2022 16:36:17.278 WARN  [http-nio-8080-exec-3] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-3[516] : No handler found for GET /ionix/user-api/
+06-10-2022 16:36:17.279 WARN  [http-nio-8080-exec-3] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-3[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/]
+06-10-2022 16:36:17.297 WARN  [http-nio-8080-exec-4] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-4[1274] : No mapping for GET /ionix/user-api/csrf
+06-10-2022 16:36:17.298 WARN  [http-nio-8080-exec-4] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-4[516] : No handler found for GET /ionix/user-api/csrf
+06-10-2022 16:36:17.299 WARN  [http-nio-8080-exec-4] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-4[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/csrf]
+06-10-2022 16:36:53.564 WARN  [http-nio-8080-exec-10] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-10[207] : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Invalid numeric value: Leading zeroes not allowed; nested exception is com.fasterxml.jackson.core.JsonParseException: Invalid numeric value: Leading zeroes not allowed
+ at [Source: (PushbackInputStream); line: 4, column: 13]]
+06-10-2022 16:40:19.362 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 16:40:19.365 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+06-10-2022 16:40:19.372 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+06-10-2022 16:40:30.478 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 9103 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+06-10-2022 16:40:30.486 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+06-10-2022 16:40:30.505 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+06-10-2022 16:40:31.527 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-10-2022 16:40:31.613 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interfaces.
+06-10-2022 16:40:32.155 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+06-10-2022 16:40:32.166 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+06-10-2022 16:40:32.167 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+06-10-2022 16:40:32.263 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+06-10-2022 16:40:32.263 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1692 ms
+06-10-2022 16:40:32.410 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+06-10-2022 16:40:32.458 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+06-10-2022 16:40:32.595 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+06-10-2022 16:40:32.696 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+06-10-2022 16:40:32.886 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+06-10-2022 16:40:32.908 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+06-10-2022 16:40:33.590 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-10-2022 16:40:33.597 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 16:40:34.325 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-10-2022 16:40:34.468 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+06-10-2022 16:40:34.747 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+06-10-2022 16:40:34.748 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+06-10-2022 16:40:34.767 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+06-10-2022 16:40:34.801 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+06-10-2022 16:40:34.968 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 10.24 seconds (JVM running for 10.934)
+06-10-2022 16:41:00.493 INFO  [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-1[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-10-2022 16:41:00.494 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[525] : Initializing Servlet 'dispatcherServlet'
+06-10-2022 16:41:00.496 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[547] : Completed initialization in 1 ms
+06-10-2022 16:41:00.763 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-6[1274] : No mapping for GET /ionix/user-api/
+06-10-2022 16:41:00.772 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-6[516] : No handler found for GET /ionix/user-api/
+06-10-2022 16:41:00.773 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-6[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/]
+06-10-2022 16:41:00.793 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-7[1274] : No mapping for GET /ionix/user-api/csrf
+06-10-2022 16:41:00.793 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-7[516] : No handler found for GET /ionix/user-api/csrf
+06-10-2022 16:41:00.793 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-7[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/csrf]
+06-10-2022 16:45:29.528 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 16:45:29.531 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+06-10-2022 16:45:29.536 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+06-10-2022 16:45:40.305 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 9146 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+06-10-2022 16:45:40.307 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+06-10-2022 16:45:40.307 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+06-10-2022 16:45:41.204 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-10-2022 16:45:41.294 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interfaces.
+06-10-2022 16:45:41.848 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+06-10-2022 16:45:41.859 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+06-10-2022 16:45:41.859 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+06-10-2022 16:45:41.954 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+06-10-2022 16:45:41.955 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1605 ms
+06-10-2022 16:45:42.103 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+06-10-2022 16:45:42.159 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+06-10-2022 16:45:42.295 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+06-10-2022 16:45:42.389 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+06-10-2022 16:45:42.574 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+06-10-2022 16:45:42.592 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+06-10-2022 16:45:43.249 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-10-2022 16:45:43.256 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 16:45:43.947 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-10-2022 16:45:44.084 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+06-10-2022 16:45:44.359 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+06-10-2022 16:45:44.360 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+06-10-2022 16:45:44.379 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+06-10-2022 16:45:44.408 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+06-10-2022 16:45:44.556 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 9.989 seconds (JVM running for 10.743)
+06-10-2022 16:45:50.806 INFO  [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-1[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-10-2022 16:45:50.808 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[525] : Initializing Servlet 'dispatcherServlet'
+06-10-2022 16:45:50.809 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[547] : Completed initialization in 1 ms
+06-10-2022 16:45:51.004 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-6[1274] : No mapping for GET /ionix/user-api/
+06-10-2022 16:45:51.010 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-6[516] : No handler found for GET /ionix/user-api/
+06-10-2022 16:45:51.011 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-6[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/]
+06-10-2022 16:45:51.029 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-7[1274] : No mapping for GET /ionix/user-api/csrf
+06-10-2022 16:45:51.030 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-7[516] : No handler found for GET /ionix/user-api/csrf
+06-10-2022 16:45:51.031 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-7[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/csrf]
+06-10-2022 16:46:04.070 WARN  [http-nio-8080-exec-8] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-8[207] : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Invalid numeric value: Leading zeroes not allowed; nested exception is com.fasterxml.jackson.core.JsonParseException: Invalid numeric value: Leading zeroes not allowed
+ at [Source: (PushbackInputStream); line: 4, column: 13]]
+06-10-2022 16:57:56.437 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 16:57:56.439 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+06-10-2022 16:57:56.444 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+06-10-2022 16:58:09.419 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 9311 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+06-10-2022 16:58:09.424 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+06-10-2022 16:58:09.425 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+06-10-2022 16:58:10.369 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-10-2022 16:58:10.450 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interfaces.
+06-10-2022 16:58:10.985 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+06-10-2022 16:58:10.997 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+06-10-2022 16:58:10.998 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+06-10-2022 16:58:11.091 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+06-10-2022 16:58:11.092 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1621 ms
+06-10-2022 16:58:11.256 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+06-10-2022 16:58:11.313 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+06-10-2022 16:58:11.452 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+06-10-2022 16:58:11.547 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+06-10-2022 16:58:11.739 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+06-10-2022 16:58:11.758 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+06-10-2022 16:58:12.412 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-10-2022 16:58:12.419 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 16:58:13.096 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-10-2022 16:58:13.231 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+06-10-2022 16:58:13.501 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+06-10-2022 16:58:13.502 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+06-10-2022 16:58:13.521 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+06-10-2022 16:58:13.552 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+06-10-2022 16:58:13.684 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 10.143 seconds (JVM running for 10.964)
+06-10-2022 16:58:19.496 INFO  [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-1[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-10-2022 16:58:19.497 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[525] : Initializing Servlet 'dispatcherServlet'
+06-10-2022 16:58:19.499 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[547] : Completed initialization in 1 ms
+06-10-2022 16:58:19.764 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-6[1274] : No mapping for GET /ionix/user-api/
+06-10-2022 16:58:19.771 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-6[516] : No handler found for GET /ionix/user-api/
+06-10-2022 16:58:19.771 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-6[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/]
+06-10-2022 16:58:19.790 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-7[1274] : No mapping for GET /ionix/user-api/csrf
+06-10-2022 16:58:19.791 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-7[516] : No handler found for GET /ionix/user-api/csrf
+06-10-2022 16:58:19.791 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-7[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/csrf]
+06-10-2022 17:00:41.637 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 17:00:41.639 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+06-10-2022 17:00:41.644 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+06-10-2022 17:01:16.864 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 9357 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+06-10-2022 17:01:16.867 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+06-10-2022 17:01:16.868 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+06-10-2022 17:01:17.766 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-10-2022 17:01:17.849 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interfaces.
+06-10-2022 17:01:18.422 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+06-10-2022 17:01:18.431 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+06-10-2022 17:01:18.431 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+06-10-2022 17:01:18.511 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+06-10-2022 17:01:18.511 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1598 ms
+06-10-2022 17:01:18.664 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+06-10-2022 17:01:18.730 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+06-10-2022 17:01:18.864 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+06-10-2022 17:01:18.950 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+06-10-2022 17:01:19.143 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+06-10-2022 17:01:19.165 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+06-10-2022 17:01:19.890 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-10-2022 17:01:19.898 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 17:01:20.710 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-10-2022 17:01:20.855 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+06-10-2022 17:01:21.143 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+06-10-2022 17:01:21.145 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+06-10-2022 17:01:21.163 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+06-10-2022 17:01:21.194 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+06-10-2022 17:01:21.343 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 10.307 seconds (JVM running for 11.079)
+06-10-2022 17:01:28.547 INFO  [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-1[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-10-2022 17:01:28.548 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[525] : Initializing Servlet 'dispatcherServlet'
+06-10-2022 17:01:28.549 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[547] : Completed initialization in 1 ms
+06-10-2022 17:01:28.780 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-6[1274] : No mapping for GET /ionix/user-api/
+06-10-2022 17:01:28.787 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-6[516] : No handler found for GET /ionix/user-api/
+06-10-2022 17:01:28.788 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-6[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/]
+06-10-2022 17:01:28.811 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-7[1274] : No mapping for GET /ionix/user-api/csrf
+06-10-2022 17:01:28.812 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-7[516] : No handler found for GET /ionix/user-api/csrf
+06-10-2022 17:01:28.812 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-7[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/csrf]
+06-10-2022 17:22:10.735 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 17:22:10.744 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+06-10-2022 17:22:10.754 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+06-10-2022 17:23:07.086 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 9721 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+06-10-2022 17:23:07.088 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+06-10-2022 17:23:07.088 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+06-10-2022 17:23:08.147 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-10-2022 17:23:08.233 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interfaces.
+06-10-2022 17:23:08.885 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+06-10-2022 17:23:08.896 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+06-10-2022 17:23:08.897 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+06-10-2022 17:23:09.017 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+06-10-2022 17:23:09.017 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1891 ms
+06-10-2022 17:23:09.177 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+06-10-2022 17:23:09.245 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+06-10-2022 17:23:09.369 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+06-10-2022 17:23:09.480 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+06-10-2022 17:23:09.685 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+06-10-2022 17:23:09.709 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+06-10-2022 17:23:10.516 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-10-2022 17:23:10.525 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 17:23:11.269 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-10-2022 17:23:11.403 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+06-10-2022 17:23:11.686 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+06-10-2022 17:23:11.688 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+06-10-2022 17:23:11.707 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+06-10-2022 17:23:11.741 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+06-10-2022 17:23:11.875 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 10.724 seconds (JVM running for 11.628)
+06-10-2022 17:23:16.217 INFO  [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-1[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-10-2022 17:23:16.219 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[525] : Initializing Servlet 'dispatcherServlet'
+06-10-2022 17:23:16.220 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[547] : Completed initialization in 1 ms
+06-10-2022 17:23:16.623 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-6[1274] : No mapping for GET /ionix/user-api/
+06-10-2022 17:23:16.634 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-6[516] : No handler found for GET /ionix/user-api/
+06-10-2022 17:23:16.635 WARN  [http-nio-8080-exec-6] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-6[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/]
+06-10-2022 17:23:16.669 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-7[1274] : No mapping for GET /ionix/user-api/csrf
+06-10-2022 17:23:16.670 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-7[516] : No handler found for GET /ionix/user-api/csrf
+06-10-2022 17:23:16.670 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-7[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/csrf]
+06-10-2022 17:36:52.761 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 17:36:52.764 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+06-10-2022 17:36:52.774 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+06-10-2022 17:37:04.977 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 9902 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+06-10-2022 17:37:04.983 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+06-10-2022 17:37:04.984 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+06-10-2022 17:37:06.122 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-10-2022 17:37:06.222 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interfaces.
+06-10-2022 17:37:06.887 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+06-10-2022 17:37:06.901 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+06-10-2022 17:37:06.902 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+06-10-2022 17:37:07.027 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+06-10-2022 17:37:07.027 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1996 ms
+06-10-2022 17:37:07.218 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+06-10-2022 17:37:07.277 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+06-10-2022 17:37:07.441 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+06-10-2022 17:37:07.554 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+06-10-2022 17:37:07.774 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+06-10-2022 17:37:07.801 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+06-10-2022 17:37:08.568 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-10-2022 17:37:08.575 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 17:37:09.409 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-10-2022 17:37:09.583 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+06-10-2022 17:37:09.920 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+06-10-2022 17:37:09.921 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+06-10-2022 17:37:09.943 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+06-10-2022 17:37:09.978 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+06-10-2022 17:37:10.146 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 10.97 seconds (JVM running for 11.973)
+06-10-2022 17:37:22.592 INFO  [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-1[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-10-2022 17:37:22.593 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[525] : Initializing Servlet 'dispatcherServlet'
+06-10-2022 17:37:22.595 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[547] : Completed initialization in 2 ms
+06-10-2022 17:44:31.138 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+06-10-2022 17:44:31.143 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+06-10-2022 17:44:31.157 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
