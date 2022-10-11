@@ -1,18 +1,13 @@
 package cl.ionix.user.controller;
 
 import cl.ionix.user.controller.dto.base.BaseResponseDto;
-import cl.ionix.user.controller.dto.base.ExternalResponseDto;
 import cl.ionix.user.controller.dto.base.ResultCodeType;
 import cl.ionix.user.controller.dto.base.UserDto;
 import cl.ionix.user.core.bo.UserBo;
 import cl.ionix.user.core.services.UserService;
 import cl.ionix.user.util.Constant;
-import cl.ionix.user.util.DesCipher;
 import cl.ionix.user.util.EntityUtilities;
 import cl.ionix.user.util.MessageSourceUtilities;
-import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ArrayNode;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
@@ -21,12 +16,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 
-import javax.crypto.BadPaddingException;
-import javax.crypto.IllegalBlockSizeException;
-import javax.crypto.NoSuchPaddingException;
-import java.io.UnsupportedEncodingException;
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 
