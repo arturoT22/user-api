@@ -1130,3 +1130,379 @@
 11-10-2022 14:37:51.812 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool$HouseKeeper.HikariPool-1 housekeeper[788] : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m58s444ms).
 11-10-2022 14:53:27.230 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool$HouseKeeper.HikariPool-1 housekeeper[788] : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m5s394ms).
 11-10-2022 15:06:49.764 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool$HouseKeeper.HikariPool-1 housekeeper[788] : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m52s550ms).
+11-10-2022 16:12:00.070 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 64082 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+11-10-2022 16:12:00.073 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+11-10-2022 16:12:00.074 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+11-10-2022 16:12:01.119 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-10-2022 16:12:01.183 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+11-10-2022 16:12:01.731 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+11-10-2022 16:12:01.742 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+11-10-2022 16:12:01.742 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+11-10-2022 16:12:01.837 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+11-10-2022 16:12:01.837 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1712 ms
+11-10-2022 16:12:01.983 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+11-10-2022 16:12:02.036 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+11-10-2022 16:12:02.179 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+11-10-2022 16:12:02.275 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+11-10-2022 16:12:02.475 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+11-10-2022 16:12:02.499 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+11-10-2022 16:12:03.164 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-10-2022 16:12:03.171 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:12:03.825 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-10-2022 16:12:04.093 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain.main[51] : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43e9a8a2, org.springframework.security.web.context.SecurityContextPersistenceFilter@59301546, org.springframework.security.web.header.HeaderWriterFilter@51ac72f7, org.springframework.security.web.authentication.logout.LogoutFilter@44846c76, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@30f54522, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@363d29dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5bbf3869, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@178617da, org.springframework.security.web.session.SessionManagementFilter@2b370ca9, org.springframework.security.web.access.ExceptionTranslationFilter@2b69ff13, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6894436e]
+11-10-2022 16:12:04.117 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11-10-2022 16:12:04.413 WARN  [main] org.springframework.context.support.AbstractApplicationContext.main[591] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+11-10-2022 16:12:04.416 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:12:04.418 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[350] : HikariPool-1 - Shutdown initiated...
+11-10-2022 16:12:04.424 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[352] : HikariPool-1 - Shutdown completed.
+11-10-2022 16:12:04.425 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Stopping service [Tomcat]
+11-10-2022 16:12:04.440 INFO  [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.main[136] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11-10-2022 16:12:04.459 ERROR [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.main[40] : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+11-10-2022 16:12:44.076 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 67092 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+11-10-2022 16:12:44.079 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+11-10-2022 16:12:44.079 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+11-10-2022 16:12:44.941 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-10-2022 16:12:45.004 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+11-10-2022 16:12:45.505 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+11-10-2022 16:12:45.514 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+11-10-2022 16:12:45.515 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+11-10-2022 16:12:45.632 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+11-10-2022 16:12:45.632 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1512 ms
+11-10-2022 16:12:45.775 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+11-10-2022 16:12:45.824 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+11-10-2022 16:12:45.960 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+11-10-2022 16:12:46.054 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+11-10-2022 16:12:46.239 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+11-10-2022 16:12:46.259 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+11-10-2022 16:12:46.883 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-10-2022 16:12:46.890 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:12:47.570 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-10-2022 16:12:47.840 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain.main[51] : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43e9a8a2, org.springframework.security.web.context.SecurityContextPersistenceFilter@59301546, org.springframework.security.web.header.HeaderWriterFilter@51ac72f7, org.springframework.security.web.authentication.logout.LogoutFilter@44846c76, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@30f54522, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@363d29dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5bbf3869, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@178617da, org.springframework.security.web.session.SessionManagementFilter@2b370ca9, org.springframework.security.web.access.ExceptionTranslationFilter@2b69ff13, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6894436e]
+11-10-2022 16:12:47.864 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11-10-2022 16:12:48.134 WARN  [main] org.springframework.context.support.AbstractApplicationContext.main[591] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+11-10-2022 16:12:48.137 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:12:48.138 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[350] : HikariPool-1 - Shutdown initiated...
+11-10-2022 16:12:48.144 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[352] : HikariPool-1 - Shutdown completed.
+11-10-2022 16:12:48.146 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Stopping service [Tomcat]
+11-10-2022 16:12:48.156 INFO  [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.main[136] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11-10-2022 16:12:48.171 ERROR [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.main[40] : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+11-10-2022 16:13:45.852 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:13:45.883 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+11-10-2022 16:13:45.888 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+11-10-2022 16:14:44.883 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 74799 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+11-10-2022 16:14:44.887 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+11-10-2022 16:14:44.887 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+11-10-2022 16:14:45.981 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-10-2022 16:14:46.041 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+11-10-2022 16:14:46.615 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+11-10-2022 16:14:46.624 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+11-10-2022 16:14:46.624 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+11-10-2022 16:14:46.724 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+11-10-2022 16:14:46.724 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1787 ms
+11-10-2022 16:14:46.873 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+11-10-2022 16:14:46.934 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+11-10-2022 16:14:47.074 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+11-10-2022 16:14:47.178 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+11-10-2022 16:14:47.363 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+11-10-2022 16:14:47.385 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+11-10-2022 16:14:48.007 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-10-2022 16:14:48.014 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:14:48.681 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-10-2022 16:14:48.944 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain.main[51] : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5af47414, org.springframework.security.web.context.SecurityContextPersistenceFilter@3203a4ae, org.springframework.security.web.header.HeaderWriterFilter@35599228, org.springframework.security.web.authentication.logout.LogoutFilter@46ae897c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2e9f5499, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25fc2b8f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4138af7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43e9a8a2, org.springframework.security.web.session.SessionManagementFilter@69f55ea, org.springframework.security.web.access.ExceptionTranslationFilter@46878216, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a5c0b8]
+11-10-2022 16:14:48.968 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11-10-2022 16:14:49.264 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+11-10-2022 16:14:49.265 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+11-10-2022 16:14:49.282 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+11-10-2022 16:14:49.311 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+11-10-2022 16:14:49.448 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 10.324 seconds (JVM running for 11.294)
+11-10-2022 16:14:57.436 INFO  [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-1[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-10-2022 16:14:57.438 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[525] : Initializing Servlet 'dispatcherServlet'
+11-10-2022 16:14:57.439 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[547] : Completed initialization in 1 ms
+11-10-2022 16:14:57.547 ERROR [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-1[175] : Servlet.service() for servlet [dispatcherServlet] in context with path [/ionix/user-api] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Cipher not initialized] with root cause [java.lang.IllegalStateException: Cipher not initialized]
+11-10-2022 16:15:38.504 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:15:38.506 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+11-10-2022 16:15:38.511 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+11-10-2022 16:15:49.869 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 78673 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+11-10-2022 16:15:49.872 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+11-10-2022 16:15:49.873 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+11-10-2022 16:15:50.873 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-10-2022 16:15:50.941 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+11-10-2022 16:15:51.508 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+11-10-2022 16:15:51.517 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+11-10-2022 16:15:51.517 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+11-10-2022 16:15:51.614 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+11-10-2022 16:15:51.615 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1696 ms
+11-10-2022 16:15:51.769 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+11-10-2022 16:15:51.820 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+11-10-2022 16:15:51.961 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+11-10-2022 16:15:52.061 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+11-10-2022 16:15:52.257 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+11-10-2022 16:15:52.279 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+11-10-2022 16:15:52.935 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-10-2022 16:15:52.942 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:15:53.584 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-10-2022 16:15:53.862 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain.main[51] : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8bb5c2a, org.springframework.security.web.context.SecurityContextPersistenceFilter@53570fff, org.springframework.security.web.header.HeaderWriterFilter@2eb0932c, org.springframework.security.web.authentication.logout.LogoutFilter@74130456, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@711fbcef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c7787a7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46baac0d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a9d572, org.springframework.security.web.session.SessionManagementFilter@53202b06, org.springframework.security.web.access.ExceptionTranslationFilter@2a738d47, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25af1dbf]
+11-10-2022 16:15:53.900 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11-10-2022 16:15:54.209 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+11-10-2022 16:15:54.210 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+11-10-2022 16:15:54.228 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+11-10-2022 16:15:54.259 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+11-10-2022 16:15:54.440 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 10.342 seconds (JVM running for 11.101)
+11-10-2022 16:15:58.023 INFO  [http-nio-8080-exec-2] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-2[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-10-2022 16:15:58.025 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-2[525] : Initializing Servlet 'dispatcherServlet'
+11-10-2022 16:15:58.026 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-2[547] : Completed initialization in 1 ms
+11-10-2022 16:16:02.620 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:16:02.622 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+11-10-2022 16:16:02.626 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+11-10-2022 16:23:59.588 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 14292 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+11-10-2022 16:23:59.591 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+11-10-2022 16:23:59.591 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+11-10-2022 16:24:00.754 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-10-2022 16:24:00.816 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+11-10-2022 16:24:01.386 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+11-10-2022 16:24:01.396 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+11-10-2022 16:24:01.397 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+11-10-2022 16:24:01.498 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+11-10-2022 16:24:01.498 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1865 ms
+11-10-2022 16:24:01.642 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+11-10-2022 16:24:01.696 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+11-10-2022 16:24:01.830 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+11-10-2022 16:24:01.918 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+11-10-2022 16:24:02.095 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+11-10-2022 16:24:02.113 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+11-10-2022 16:24:02.697 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-10-2022 16:24:02.703 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:24:03.327 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-10-2022 16:24:03.571 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain.main[51] : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f70d78c, org.springframework.security.web.context.SecurityContextPersistenceFilter@3531509c, org.springframework.security.web.header.HeaderWriterFilter@41041c31, org.springframework.security.web.authentication.logout.LogoutFilter@643fed50, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@34893693, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f2b1a2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53570fff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@456c53a, org.springframework.security.web.session.SessionManagementFilter@7bf2e475, org.springframework.security.web.access.ExceptionTranslationFilter@6bf34912, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44846c76]
+11-10-2022 16:24:03.605 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11-10-2022 16:24:03.934 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+11-10-2022 16:24:03.935 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+11-10-2022 16:24:03.956 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+11-10-2022 16:24:03.992 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+11-10-2022 16:24:04.156 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 10.257 seconds (JVM running for 11.221)
+11-10-2022 16:24:18.128 INFO  [http-nio-8080-exec-2] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-2[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-10-2022 16:24:18.129 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-2[525] : Initializing Servlet 'dispatcherServlet'
+11-10-2022 16:24:18.130 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-2[547] : Completed initialization in 1 ms
+11-10-2022 16:40:19.627 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:40:19.631 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+11-10-2022 16:40:19.636 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+11-10-2022 16:40:30.358 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 84849 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+11-10-2022 16:40:30.361 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+11-10-2022 16:40:30.361 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+11-10-2022 16:40:31.439 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-10-2022 16:40:31.504 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+11-10-2022 16:40:32.058 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+11-10-2022 16:40:32.069 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+11-10-2022 16:40:32.070 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+11-10-2022 16:40:32.162 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+11-10-2022 16:40:32.163 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1760 ms
+11-10-2022 16:40:32.304 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+11-10-2022 16:40:32.352 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+11-10-2022 16:40:32.488 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+11-10-2022 16:40:32.592 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+11-10-2022 16:40:32.763 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+11-10-2022 16:40:32.781 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+11-10-2022 16:40:33.367 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-10-2022 16:40:33.379 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:40:33.974 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-10-2022 16:40:34.223 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain.main[51] : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e9f5499, org.springframework.security.web.context.SecurityContextPersistenceFilter@69f55ea, org.springframework.security.web.header.HeaderWriterFilter@7136ad9a, org.springframework.security.web.authentication.logout.LogoutFilter@5b11d0d8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@d8cece4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3203a4ae, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19b4dd60, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30f54522, org.springframework.security.web.session.SessionManagementFilter@69ee0861, org.springframework.security.web.access.ExceptionTranslationFilter@5d10e2b6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@31ecd003]
+11-10-2022 16:40:34.244 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11-10-2022 16:40:34.542 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+11-10-2022 16:40:34.543 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+11-10-2022 16:40:34.560 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+11-10-2022 16:40:34.588 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+11-10-2022 16:40:34.715 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 10.034 seconds (JVM running for 10.802)
+11-10-2022 16:40:41.171 INFO  [http-nio-8080-exec-2] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-2[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-10-2022 16:40:41.173 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-2[525] : Initializing Servlet 'dispatcherServlet'
+11-10-2022 16:40:41.174 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-2[547] : Completed initialization in 1 ms
+11-10-2022 16:40:43.177 ERROR [http-nio-8080-exec-2] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-2[175] : Servlet.service() for servlet [dispatcherServlet] in context with path [/ionix/user-api] threw exception [Request processing failed; nested exception is org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class java.lang.reflect.Array]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class java.lang.reflect.Array and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: cl.ionix.user.controller.dto.base.ExternalResponseDto["result"])] with root cause [com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class java.lang.reflect.Array and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: cl.ionix.user.controller.dto.base.ExternalResponseDto["result"])]
+11-10-2022 16:42:14.421 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:42:14.424 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+11-10-2022 16:42:14.428 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+11-10-2022 16:42:23.106 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 92580 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+11-10-2022 16:42:23.109 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+11-10-2022 16:42:23.109 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+11-10-2022 16:42:23.969 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-10-2022 16:42:24.040 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+11-10-2022 16:42:24.536 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+11-10-2022 16:42:24.544 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+11-10-2022 16:42:24.545 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+11-10-2022 16:42:24.631 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+11-10-2022 16:42:24.631 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1477 ms
+11-10-2022 16:42:24.767 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+11-10-2022 16:42:24.814 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+11-10-2022 16:42:24.939 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+11-10-2022 16:42:25.023 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+11-10-2022 16:42:25.190 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+11-10-2022 16:42:25.206 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+11-10-2022 16:42:25.775 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-10-2022 16:42:25.781 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:42:26.358 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-10-2022 16:42:26.609 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain.main[51] : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@178617da, org.springframework.security.web.context.SecurityContextPersistenceFilter@25fc2b8f, org.springframework.security.web.header.HeaderWriterFilter@15324f25, org.springframework.security.web.authentication.logout.LogoutFilter@1146e32e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5af47414, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19b4dd60, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64dfa1a3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d408c5d, org.springframework.security.web.session.SessionManagementFilter@3203a4ae, org.springframework.security.web.access.ExceptionTranslationFilter@7136ad9a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f2feab7]
+11-10-2022 16:42:26.632 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11-10-2022 16:42:26.921 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+11-10-2022 16:42:26.922 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+11-10-2022 16:42:26.937 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+11-10-2022 16:42:26.963 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+11-10-2022 16:42:27.090 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 9.643 seconds (JVM running for 10.331)
+11-10-2022 16:42:30.943 INFO  [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-1[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-10-2022 16:42:30.944 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[525] : Initializing Servlet 'dispatcherServlet'
+11-10-2022 16:42:30.946 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[547] : Completed initialization in 1 ms
+11-10-2022 16:52:40.612 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:52:40.616 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+11-10-2022 16:52:40.622 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+11-10-2022 16:52:51.091 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 38201 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+11-10-2022 16:52:51.094 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+11-10-2022 16:52:51.095 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+11-10-2022 16:52:52.040 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-10-2022 16:52:52.117 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interfaces.
+11-10-2022 16:52:52.620 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+11-10-2022 16:52:52.629 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+11-10-2022 16:52:52.629 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+11-10-2022 16:52:52.720 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+11-10-2022 16:52:52.720 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1583 ms
+11-10-2022 16:52:52.869 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+11-10-2022 16:52:52.919 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+11-10-2022 16:52:53.059 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+11-10-2022 16:52:53.150 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+11-10-2022 16:52:53.317 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+11-10-2022 16:52:53.333 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+11-10-2022 16:52:53.890 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-10-2022 16:52:53.897 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:52:54.474 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-10-2022 16:52:54.721 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain.main[51] : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5af47414, org.springframework.security.web.context.SecurityContextPersistenceFilter@3203a4ae, org.springframework.security.web.header.HeaderWriterFilter@35599228, org.springframework.security.web.authentication.logout.LogoutFilter@46ae897c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2e9f5499, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25fc2b8f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4138af7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43e9a8a2, org.springframework.security.web.session.SessionManagementFilter@69f55ea, org.springframework.security.web.access.ExceptionTranslationFilter@46878216, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a5c0b8]
+11-10-2022 16:52:54.742 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11-10-2022 16:52:55.027 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+11-10-2022 16:52:55.028 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+11-10-2022 16:52:55.045 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+11-10-2022 16:52:55.071 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+11-10-2022 16:52:55.199 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 9.781 seconds (JVM running for 10.543)
+11-10-2022 16:52:59.147 INFO  [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-1[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-10-2022 16:52:59.148 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[525] : Initializing Servlet 'dispatcherServlet'
+11-10-2022 16:52:59.149 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-1[547] : Completed initialization in 1 ms
+11-10-2022 16:55:46.558 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:55:46.561 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+11-10-2022 16:55:46.565 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+11-10-2022 16:55:55.106 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 50477 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+11-10-2022 16:55:55.109 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+11-10-2022 16:55:55.110 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+11-10-2022 16:55:55.978 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-10-2022 16:55:56.034 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+11-10-2022 16:55:56.555 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+11-10-2022 16:55:56.563 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+11-10-2022 16:55:56.563 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+11-10-2022 16:55:56.656 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+11-10-2022 16:55:56.656 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1504 ms
+11-10-2022 16:55:56.792 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+11-10-2022 16:55:56.841 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+11-10-2022 16:55:56.969 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+11-10-2022 16:55:57.054 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+11-10-2022 16:55:57.226 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+11-10-2022 16:55:57.244 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+11-10-2022 16:55:57.814 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-10-2022 16:55:57.820 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:55:58.398 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-10-2022 16:55:58.644 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain.main[51] : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43e9a8a2, org.springframework.security.web.context.SecurityContextPersistenceFilter@59301546, org.springframework.security.web.header.HeaderWriterFilter@51ac72f7, org.springframework.security.web.authentication.logout.LogoutFilter@44846c76, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@30f54522, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@363d29dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5bbf3869, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@178617da, org.springframework.security.web.session.SessionManagementFilter@2b370ca9, org.springframework.security.web.access.ExceptionTranslationFilter@2b69ff13, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6894436e]
+11-10-2022 16:55:58.666 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11-10-2022 16:55:58.950 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+11-10-2022 16:55:58.951 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+11-10-2022 16:55:58.966 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+11-10-2022 16:55:58.992 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+11-10-2022 16:55:59.122 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 9.659 seconds (JVM running for 10.332)
+11-10-2022 16:56:03.004 INFO  [http-nio-8080-exec-2] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-2[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-10-2022 16:56:03.005 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-2[525] : Initializing Servlet 'dispatcherServlet'
+11-10-2022 16:56:03.007 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-2[547] : Completed initialization in 2 ms
+11-10-2022 16:57:33.332 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:57:33.334 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+11-10-2022 16:57:33.338 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+11-10-2022 16:57:42.065 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 57906 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+11-10-2022 16:57:42.068 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+11-10-2022 16:57:42.068 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+11-10-2022 16:57:42.981 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-10-2022 16:57:43.057 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interfaces.
+11-10-2022 16:57:43.593 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+11-10-2022 16:57:43.603 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+11-10-2022 16:57:43.603 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+11-10-2022 16:57:43.692 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+11-10-2022 16:57:43.693 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1584 ms
+11-10-2022 16:57:43.827 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+11-10-2022 16:57:43.880 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+11-10-2022 16:57:44.012 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+11-10-2022 16:57:44.097 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+11-10-2022 16:57:44.264 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+11-10-2022 16:57:44.281 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+11-10-2022 16:57:44.853 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-10-2022 16:57:44.860 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:57:45.465 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-10-2022 16:57:45.698 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain.main[51] : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8bb5c2a, org.springframework.security.web.context.SecurityContextPersistenceFilter@53570fff, org.springframework.security.web.header.HeaderWriterFilter@2eb0932c, org.springframework.security.web.authentication.logout.LogoutFilter@74130456, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@711fbcef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c7787a7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46baac0d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a9d572, org.springframework.security.web.session.SessionManagementFilter@53202b06, org.springframework.security.web.access.ExceptionTranslationFilter@2a738d47, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25af1dbf]
+11-10-2022 16:57:45.729 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11-10-2022 16:57:46.019 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+11-10-2022 16:57:46.020 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+11-10-2022 16:57:46.036 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+11-10-2022 16:57:46.063 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+11-10-2022 16:57:46.194 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 9.759 seconds (JVM running for 10.443)
+11-10-2022 16:57:48.718 INFO  [http-nio-8080-exec-2] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-2[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-10-2022 16:57:48.719 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-2[525] : Initializing Servlet 'dispatcherServlet'
+11-10-2022 16:57:48.721 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-2[547] : Completed initialization in 2 ms
+11-10-2022 16:58:26.295 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:58:26.297 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+11-10-2022 16:58:26.302 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
+11-10-2022 16:58:35.093 INFO  [main] org.springframework.boot.StartupInfoLogger.main[55] : Starting UserApiApplication using Java 11.0.16 on MacBook-Pro.local with PID 61355 (/Users/arturotorres/IdeaProjects/user-api/build/classes/java/main started by arturotorres in /Users/arturotorres/IdeaProjects/user-api)
+11-10-2022 16:58:35.096 DEBUG [main] org.springframework.boot.StartupInfoLogger.main[56] : Running with Spring Boot v2.5.2, Spring v5.3.8
+11-10-2022 16:58:35.097 INFO  [main] org.springframework.boot.SpringApplication.main[659] : No active profile set, falling back to default profiles: default
+11-10-2022 16:58:35.953 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[132] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-10-2022 16:58:36.009 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate.main[201] : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+11-10-2022 16:58:36.509 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[108] : Tomcat initialized with port(s): 8080 (http)
+11-10-2022 16:58:36.517 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting service [Tomcat]
+11-10-2022 16:58:36.518 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Starting Servlet engine: [Apache Tomcat/9.0.48]
+11-10-2022 16:58:36.627 INFO  [main] org.apache.juli.logging.DirectJDKLog.main[173] : Initializing Spring embedded WebApplicationContext
+11-10-2022 16:58:36.627 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.main[290] : Root WebApplicationContext: initialization completed in 1488 ms
+11-10-2022 16:58:36.765 INFO  [main] org.hibernate.jpa.internal.util.LogHelper.main[31] : HHH000204: Processing PersistenceUnitInfo [name: default]
+11-10-2022 16:58:36.814 INFO  [main] org.hibernate.Version.main[44] : HHH000412: Hibernate ORM core version 5.4.21.Final
+11-10-2022 16:58:36.940 INFO  [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.main[49] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+11-10-2022 16:58:37.024 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[110] : HikariPool-1 - Starting...
+11-10-2022 16:58:37.191 INFO  [main] com.zaxxer.hikari.HikariDataSource.main[123] : HikariPool-1 - Start completed.
+11-10-2022 16:58:37.209 INFO  [main] org.hibernate.dialect.Dialect.main[170] : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+11-10-2022 16:58:37.766 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.main[52] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-10-2022 16:58:37.773 INFO  [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.main[437] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 16:58:38.349 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.main[219] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-10-2022 16:58:38.598 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain.main[51] : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43e9a8a2, org.springframework.security.web.context.SecurityContextPersistenceFilter@59301546, org.springframework.security.web.header.HeaderWriterFilter@51ac72f7, org.springframework.security.web.authentication.logout.LogoutFilter@44846c76, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@30f54522, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@363d29dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5bbf3869, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@178617da, org.springframework.security.web.session.SessionManagementFilter@2b370ca9, org.springframework.security.web.access.ExceptionTranslationFilter@2b69ff13, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6894436e]
+11-10-2022 16:58:38.620 INFO  [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.main[69] : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11-10-2022 16:58:38.909 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.main[220] : Tomcat started on port(s): 8080 (http) with context path '/ionix/user-api'
+11-10-2022 16:58:38.910 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[160] : Context refreshed
+11-10-2022 16:58:38.925 INFO  [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.main[163] : Found 1 custom documentation plugin(s)
+11-10-2022 16:58:38.952 INFO  [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.main[41] : Scanning for api listing references
+11-10-2022 16:58:39.078 INFO  [main] org.springframework.boot.StartupInfoLogger.main[61] : Started UserApiApplication in 9.634 seconds (JVM running for 10.31)
+11-10-2022 16:58:43.079 INFO  [http-nio-8080-exec-2] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-2[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+11-10-2022 16:58:43.080 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-2[525] : Initializing Servlet 'dispatcherServlet'
+11-10-2022 16:58:43.082 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-2[547] : Completed initialization in 2 ms
