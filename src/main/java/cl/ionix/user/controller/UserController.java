@@ -1,5 +1,4 @@
 package cl.ionix.user.controller;
-
 import cl.ionix.user.controller.dto.base.BaseResponseDto;
 import cl.ionix.user.controller.dto.base.ResultCodeType;
 import cl.ionix.user.controller.dto.base.UserDto;
@@ -14,8 +13,6 @@ import org.springframework.http.*;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
-
-
 import java.util.ArrayList;
 import java.util.List;
 

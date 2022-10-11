@@ -1506,3 +1506,12 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 11-10-2022 16:58:43.079 INFO  [http-nio-8080-exec-2] org.apache.juli.logging.DirectJDKLog.http-nio-8080-exec-2[173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
 11-10-2022 16:58:43.080 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-2[525] : Initializing Servlet 'dispatcherServlet'
 11-10-2022 16:58:43.082 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet.http-nio-8080-exec-2[547] : Completed initialization in 2 ms
+11-10-2022 17:05:28.424 WARN  [http-nio-8080-exec-8] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-8[1274] : No mapping for GET /ionix/user-api/
+11-10-2022 17:05:28.436 WARN  [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-8[516] : No handler found for GET /ionix/user-api/
+11-10-2022 17:05:28.437 WARN  [http-nio-8080-exec-8] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-8[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/]
+11-10-2022 17:05:28.453 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.DispatcherServlet.http-nio-8080-exec-7[1274] : No mapping for GET /ionix/user-api/csrf
+11-10-2022 17:05:28.454 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.http-nio-8080-exec-7[516] : No handler found for GET /ionix/user-api/csrf
+11-10-2022 17:05:28.454 WARN  [http-nio-8080-exec-7] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.http-nio-8080-exec-7[207] : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /ionix/user-api/csrf]
+11-10-2022 17:06:53.078 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.SpringApplicationShutdownHook[651] : Closing JPA EntityManagerFactory for persistence unit 'default'
+11-10-2022 17:06:53.081 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[350] : HikariPool-1 - Shutdown initiated...
+11-10-2022 17:06:53.087 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource.SpringApplicationShutdownHook[352] : HikariPool-1 - Shutdown completed.
