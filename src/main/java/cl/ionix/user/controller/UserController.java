@@ -90,6 +90,8 @@ public class UserController {
 			return new BaseResponseDto<>(ResultCodeType.SUCCESS, MessageSourceUtilities.getValue(Constant.MSGE_SUCCESS_GENERIC_OPERATION),EntityUtilities.copyObjectFrom(baseService.getUserByEmail(email), UserDto.class));}
 		catch(Exception e){
 			return new BaseResponseDto<>(ResultCodeType.ERROR, MessageSourceUtilities.getValue(Constant.MSGE_ERROR_GENERIC_RESPONSE));
+
+			
 		}
 	}
 
