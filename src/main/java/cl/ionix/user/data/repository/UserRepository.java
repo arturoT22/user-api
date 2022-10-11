@@ -6,11 +6,12 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.transaction.annotation.Transactional;
 
 
-public interface UserJpaInterface extends JpaRepository<UserEntity, Integer>{
+public interface UserRepository extends JpaRepository<UserEntity, Integer>{
     UserEntity findByEmail(String email);
+
     @Transactional
     @Modifying
     @Query("Delete from UserEntity c Where c.email=?1")
-    void eliminarPorEmail(String email);
+    void deleteByEmail(String email);
 }
 

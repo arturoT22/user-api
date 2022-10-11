@@ -12,6 +12,8 @@ public class BaseResponseDto<T> extends MessageResponseDto{
 	private ResultCodeType result;
 	T data;
 	List<String> errors;
+	List<UserDto> dataList;
+
 
 	public ResultCodeType getResult() {
 		return result;
@@ -37,6 +39,14 @@ public class BaseResponseDto<T> extends MessageResponseDto{
 		this.errors = errors;
 	}
 
+	public List<UserDto> getDataList() {
+		return dataList;
+	}
+
+	public void setDataList(List<UserDto> errors) {
+		this.dataList = dataList;
+	}
+
 	public BaseResponseDto(ResultCodeType result, String message, T data) {
 		super(message);
 		this.result = result;
@@ -59,11 +69,18 @@ public class BaseResponseDto<T> extends MessageResponseDto{
 		this.data = data;
 	}
 
-	public BaseResponseDto(ResultCodeType result, MessageResponseDto messageResponseDto, List<String> errors) {
+	public BaseResponseDto(ResultCodeType result, MessageResponseDto messageResponseDto, List<UserDto> userDtoList) {
+		super(messageResponseDto);
+		this.result = result;
+		this.dataList = userDtoList;
+	}
+
+
+	/*public BaseResponseDto(ResultCodeType result, MessageResponseDto messageResponseDto, List<String> errors) {
 		super(messageResponseDto);
 		this.result = result;
 		this.errors = errors;
-	}
+	}*/
 
 	public BaseResponseDto(ResultCodeType result, MessageResponseDto messageResponseDto) {
 		super(messageResponseDto);

@@ -1,7 +1,6 @@
-package cl.ionix.user.core.bo;
+package cl.ionix.user.controller.dto.base;
 
-
-public class UserBo {
+public class UserDto {
 
 	private String name;
 	private String username;
