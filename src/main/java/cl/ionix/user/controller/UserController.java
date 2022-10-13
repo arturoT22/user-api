@@ -43,7 +43,7 @@ public class UserController {
 	@ResponseStatus(HttpStatus.OK)
 	@ApiOperation(value = "Consumo servicio externo", response = BaseResponseDto.class)
 	public String externalService(@PathVariable("param") String param) throws UnsupportedEncodingException, NoSuchPaddingException, IllegalBlockSizeException, NoSuchAlgorithmException, BadPaddingException, InvalidKeyException {
-		return externalService.search(param);
+		return String.valueOf(externalService.search(param));
 	}
 
 	@PostMapping

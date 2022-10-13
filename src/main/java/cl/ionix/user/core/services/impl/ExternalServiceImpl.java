@@ -2,6 +2,9 @@ package cl.ionix.user.core.services.impl;
 
 import cl.ionix.user.core.services.ExternalService;
 import cl.ionix.user.util.CommonUtilities;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
