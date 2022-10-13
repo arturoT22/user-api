@@ -4,8 +4,10 @@ import cl.ionix.user.core.bo.UserBo;
 import cl.ionix.user.core.services.UserService;
 import cl.ionix.user.data.entity.UserEntity;
 import cl.ionix.user.data.repository.UserRepository;
+import cl.ionix.user.exception.UserFoundException;
+import cl.ionix.user.exception.UserNotFoundException;
+import cl.ionix.user.exception.UsersDatabaseIsEmptyException;
 import cl.ionix.user.util.EntityUtilities;
-import net.bytebuddy.asm.Advice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +22,11 @@ public class UserServiceImpl implements UserService {
 
 
 	@Override
-	public List<UserBo> getUserList() {
+	public List<UserBo> getUserList() throws UsersDatabaseIsEmptyException {
+		if(users.findAll() == null){
+			throw new UsersDatabaseIsEmptyException("User database is empty");
+		}
+
 		List<UserBo> userBoList = new ArrayList<>();
 		for (UserEntity userEntity:users.findAll()) {
 			userBoList.add(EntityUtilities.copyObjectFrom(userEntity, UserBo.class));
@@ -30,32 +36,31 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public boolean postUserCreate(UserBo User) {
+	public void postUserCreate(UserBo User) throws UserFoundException {
 		if(users.findByEmail(User.getEmail()) != null){
-			return false;
+			throw new UserFoundException("User ["+User.getEmail()+"] not found");
 		}
-		else{
 		UserEntity userEntity = EntityUtilities.copyObjectFrom(User,UserEntity.class );
 		users.save(userEntity);
-		return true;
-		}
 	}
 
 	@Override
-	public boolean deleteUserByEmail(String email){
+	public void deleteUserByEmail(String email) throws UserNotFoundException {
 
-		if(users.findByEmail(email) != null){
-			users.deleteByEmail(email);
-			return true;
+		UserEntity byEmail = users.findByEmail(email);
+		if(byEmail == null){
+			throw new UserNotFoundException("User ["+email+"] not found");
 		}
-		else{
-			return false;
-		}
+		users.deleteByEmail(email);
 	}
 
 
 	@Override
-	public UserBo getUserByEmail(String email) {
+	public UserBo getUserByEmail(String email) throws UserNotFoundException {
+		UserEntity byEmail = users.findByEmail(email);
+		if(byEmail == null){
+			throw new UserNotFoundException("User ["+email+"] not found");
+		}
 		return EntityUtilities.copyObjectFrom(users.findByEmail(email), UserBo.class);
 	}
 }
